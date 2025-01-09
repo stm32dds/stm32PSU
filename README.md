@@ -9,7 +9,7 @@
 https://stm32dds.tk/stm32-psu . Информация как да си направите “активен”
 интерфейсен кабел можете да получите също от този сайт. Фърмуерът за
 програмирането на този “кабел” можете да свалите от репозиторий
-https://github.com/stm32dds/iSTM32PSU-IIC  или сайта по-горе.
+https://github.com/stm32dds/iSTM32PSU-IIC  или сайта по-горе. 
 
 [EN] stm32PSU is a communication program for controlling a linear power supply
 model PSU_F030CCT6 through a personal computer with Windows operating system.
@@ -19,4 +19,4 @@ compile the project files from this repository with Microsoft Visual Studio or
 download an executable file from https://stm32dds.tk/stm32-psu . Information
 on how to make an "active" interface cable can also be obtained from this site.
 You can download the firmware for programming this "cable" from the repository
-https://github.com/stm32dds/iSTM32PSU-IIC or the site above.
+https://github.com/stm32dds/iSTM32PSU-IIC or the site above. 
