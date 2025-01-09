@@ -51,7 +51,8 @@ void onEnterInEditCtrl(HWND hDlg, float* uSP, float* iSP)
             SendDlgItemMessageW(hDlg, IDC_DISP_USP, EM_SETSEL, txtLen, txtLen);
             *uSP = tmpFloat;
         }
-        //MessageBox(hDlg, L"Voltage field focused", L"Info", MB_OK);
+        else
+            MessageBox(hDlg, L"Wrong VOLTAGE entry!", L"Warning", MB_ICONWARNING);
     }
     if (hFocused == GetDlgItem(hDlg, IDC_DISP_ISP))
     {
@@ -65,7 +66,8 @@ void onEnterInEditCtrl(HWND hDlg, float* uSP, float* iSP)
             SendDlgItemMessageW(hDlg, IDC_DISP_ISP, EM_SETSEL, txtLen, txtLen);
             *iSP = tmpFloat;
         }
-        // MessageBox(hDlg, L"Current field focused", L"Info", MB_OK);
+        else
+            MessageBox(hDlg, L"Wrong CURRENT entry!", L"Warning", MB_ICONWARNING);
     }
 }
 
@@ -182,7 +184,7 @@ INT_PTR CALLBACK AboutDialog(HWND hDlg,
         }
     case WM_INITDIALOG:
         SetDlgItemTextA(hDlg, IDC_VERSION,
-            (LPCSTR)"0.1"
+            (LPCSTR)"1.0"
         );
         return (INT_PTR)TRUE;
     case WM_COMMAND:
