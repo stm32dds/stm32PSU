@@ -1,6 +1,6 @@
 ﻿						stm32PSU
 
-				![Alt text](images/example.png)
+![Alt text](images/example.png)
 
 [БГ]  stm32PSU е комуникационна програма за управление на линейно захранване
 модел PSU_F030CCT6 чрез персонален компютър с операционна система Windows.
