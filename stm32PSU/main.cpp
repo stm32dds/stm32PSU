@@ -166,7 +166,7 @@ int WINAPI wWinMain(_In_ HINSTANCE hInst, _In_opt_ HINSTANCE h0, _In_ LPTSTR lpC
     SendMessage(hStatus, SB_SETTEXT, 0, (LPARAM)L"Hi there :)");
     //Load custom, resourse based icon
     SetClassLong(hDlg,          // window handle 
-        GCL_HICON,              // changes icon 
+        GCLP_HICON,              // changes icon 
         (LONG)LoadIcon(hInst, MAKEINTRESOURCE(IDI_ICON))
     );
     //Create slider for voltage set point
